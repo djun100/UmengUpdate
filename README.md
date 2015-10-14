@@ -34,4 +34,4 @@ v2.4版本之后的SDK中，您可以传入当前Activity的Context，也可以�
         maven { url "https://jitpack.io" }
     }
 
-    compile 'com.github.djun100:UmengUpdate:81d4b7126cd19260bf13a30ac80b6eba6de83e5e'
+    compile 'com.github.djun100:UmengUpdate:4852359fa7e6fa9e1206ed305f57100f526132b9'
