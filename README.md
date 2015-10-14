@@ -1,5 +1,6 @@
-# android-Email
-send email with 163mail.Cannot attach file yet.You can use it to send error log.
+# UmengUpdate
+base on umeng-update-v2.6.0.1.jar
+
 usage
 
 
