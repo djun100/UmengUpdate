@@ -35,3 +35,25 @@ v2.4版本之后的SDK中，您可以传入当前Activity的Context，也可以�
     }
 
     compile 'com.github.djun100:UmengUpdate:4852359fa7e6fa9e1206ed305f57100f526132b9'
+3、in activity
+
+        UmengUpdateAgent.setUpdateOnlyWifi(false);
+        UmengUpdateAgent.update(activity);
+        UmengUpdateAgent.setDialogListener(new UmengDialogButtonListener() {
+
+            @Override
+            public void onClick(int status) {
+                switch (status) {
+                    case UpdateStatus.Update:
+                        Toast.makeText(activity, "User chooses update.", Toast.LENGTH_SHORT).show();
+                        break;
+                    case UpdateStatus.Ignore:
+                        Toast.makeText(activity, "User chooses ignore.", Toast.LENGTH_SHORT).show();
+                        break;
+                    case UpdateStatus.NotNow:
+                        Toast.makeText(activity, "User chooses cancel.", Toast.LENGTH_SHORT).show();
+                        break;
+                }
+                activity.startActivity(MainActivity.class);
+            }
+        });
