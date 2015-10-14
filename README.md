@@ -9,4 +9,4 @@ usage
         maven { url "https://jitpack.io" }
     }
 
-    compile 'com.github.djun100:UmengUpdate:5a5d48e5371eb5986601fb274e3c7bc735e7b9b7'
+    compile 'com.github.djun100:UmengUpdate:81d4b7126cd19260bf13a30ac80b6eba6de83e5e'
